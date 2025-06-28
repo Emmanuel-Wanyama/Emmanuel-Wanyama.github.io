@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.1;
-    color: #333; /* Dark gray for general text */
-    background-color: #fcfcfc; /* Very light almost-white background */
+    color: #333; 
+    background-color: #fcfcfc; 
 }
 
 *, *::before, *::after {
@@ -14,7 +14,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Prevents extra space below images */
+    display: block; 
 }
 
 h1, h3 {
@@ -24,71 +24,71 @@ h1, h3 {
 }
 
 p {
-    margin-bottom: 1em; /* Reverted to default paragraph margin unless overridden by specific classes */
+    margin-bottom: 1em; 
 }
 
 /* Header Section (Hero) */
 .hero-section {
     text-align: center;
-    padding: 40px 20px 60px; /* Top, horizontal, bottom padding */
-    background-color: #fff; /* White background for this section */
+    padding: 40px 20px 60px; 
+    background-color: #fff; 
 }
 
 .hero-section h1 {
-    font-family: 'Inter', sans-serif; /* Modern font for headings */
+    font-family: 'Inter', sans-serif; 
     font-size: 40px; /* Large heading */
     letter-spacing: 0.02px;
     line-height: 100%;
-    font-weight: 600; /* Semi-bold for emphasis */
+    font-weight: 600; 
     text-align: center;
     margin-bottom: 30px; /* Reduced distance to image */
-    color: #161723; /* Slightly darker than body text */
+    color: #161723; 
 }
 
 .content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Vertically center items */
-    max-width: 1100px; /* Max width for the content area */
-    margin: 0 auto 50px auto; /* Center the wrapper with bottom margin */
-    gap: 20px; /* Space between columns - set to 0 for closest approach */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center; 
+    max-width: 1100px; 
+    margin: 0 auto 50px auto; 
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .text-column {
-    flex: 0.5; /* Allows columns to grow and shrink, significantly reduced for closeness */
-    min-width: 150px; /* Minimum width before breaking */
-    max-width: 400px; /* Reduced max-width to pull text columns closer */
+    flex: 0.5; 
+    min-width: 150px; 
+    max-width: 400px; 
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Space between feature items within a column */
+    gap: 30px; 
 }
 
 .image-column {
     flex: 2; /* Image column can be slightly larger */
-    min-width: 300px; /* Minimum width for the image column */
+    min-width: 300px; 
     max-width: 400px; /* Max width for the image */
 }
 
 .image-column img {
-    border-radius: 50%; /* Makes the image circular like the example */
+    border-radius: 50%; 
 }
 
 .feature-item {
     display: flex;
-    align-items: flex-start; /* Align icon and text to the top */
-    text-align: left; /* Align text to the left */
+    align-items: flex-start; 
+    text-align: left; 
     gap: 15px; /* Space between icon and text */
 }
 
 .icon-wrapper {
-    width: 60px; /* Fixed width for icon background */
-    height: 60px; /* Fixed height for icon background */
-    border-radius: 50%; /* Circular background */
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0; /* Prevent icon wrapper from shrinking */
+    flex-shrink: 0; 
 }
 
 .icon-wrapper img {
@@ -116,17 +116,17 @@ p {
 /* Call to Action Button (MAIN BUTTON STYLE) */
 .call-to-action {
     display: inline-block;
-    background-color: #f7705e; /* Orange-red color from the image */
+    background-color: #f7705e; 
     color: #fff;
-    padding: 12px 90px; /* Larger padding for the main button */
+    padding: 12px 90px; 
     border: none;
-    border-radius: 8px; /* Slightly rounded corners */
+    border-radius: 8px; 
     text-decoration: none;
-    font-size: 1.05em; /* Larger font size for the main button */
+    font-size: 1.05em; 
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 0px; /* Space below the main button */
+    margin-bottom: 0px; 
 }
 
 .call-to-action:hover {
@@ -135,7 +135,7 @@ p {
 
 /* Specific style for the SMALLER button (in nutrition section) */
 .call-to-action.small-btn {
-    font-size: 0.9em; /* Smaller font size for this specific button */
+    font-size: 0.9em; 
     padding: 10px 65px; /* Smaller padding for this specific button */
     margin-top: 10px; /* Adjust top margin if needed to separate from content above it */
     margin-bottom: 0; /* Ensure no extra space below it if not needed */
@@ -163,7 +163,7 @@ p {
 }
 
 .guarantee img {
-    width: 20px; /* Size of the heart icon */
+    width: 20px; 
     height: 20px;
     display: inline-block; /* Keep it inline with text */
 }
