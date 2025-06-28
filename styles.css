@@ -58,7 +58,7 @@ p {
 .text-column {
     flex: 0.5; /* Allows columns to grow and shrink, significantly reduced for closeness */
     min-width: 150px; /* Minimum width before breaking */
-    max-width: 300px; /* Reduced max-width to pull text columns closer */
+    max-width: 400px; /* Reduced max-width to pull text columns closer */
     display: flex;
     flex-direction: column;
     gap: 30px; /* Space between feature items within a column */
