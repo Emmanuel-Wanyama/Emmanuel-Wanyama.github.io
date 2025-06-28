@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.1;
-    color: #333; 
-    background-color: #fcfcfc; 
+    color: #333; /* Dark gray for general text */
+    background-color: #fcfcfc; /* Very light almost-white background */
 }
 
 *, *::before, *::after {
@@ -14,7 +14,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
-    display: block; 
+    display: block; /* Prevents extra space below images */
 }
 
 h1, h3 {
@@ -24,73 +24,75 @@ h1, h3 {
 }
 
 p {
-    margin-bottom: 1em; 
+    margin-bottom: 1em; /* Reverted to default paragraph margin unless overridden by specific classes */
+}
 
-/* Header Section  */
+/* Header Section (Hero) */
 .hero-section {
     text-align: center;
-    padding: 40px 20px 60px; 
-    background-color: #fff; 
+    padding: 40px 20px 60px; /* Top, horizontal, bottom padding */
+    background-color: #fff; /* White background for this section */
 }
 
 .hero-section h1 {
-    font-family: 'Inter', sans-serif; 
-    font-size: 40px; 
+    font-family: 'Inter', sans-serif; /* Modern font for headings */
+    font-size: 40px; /* Large heading */
     letter-spacing: 0.02px;
     line-height: 100%;
-    font-weight: 600; 
+    font-weight: 600; /* Semi-bold for emphasis */
     text-align: center;
-    margin-bottom: 30px; 
-    color: #161723; 
+    margin-bottom: 30px; /* Reduced distance to image */
+    color: #161723; /* Slightly darker than body text */
 }
 
 .content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    max-width: 1100px; 
-    margin: 0 auto 50px auto; 
-    gap: 20px; 
-    flex-wrap: wrap; 
+    align-items: center; /* Vertically center items */
+    max-width: 1100px; /* Max width for the content area */
+    margin: 0 auto 50px auto; /* Center the wrapper with bottom margin */
+    gap: 20px; /* Space between columns - set to 0 for closest approach */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .text-column {
-    flex: 0.5; 
-    min-width: 150px; 
-    max-width: 400px; 
+    flex: 0.5; /* Allows columns to grow and shrink, significantly reduced for closeness */
+    min-width: 150px; /* Minimum width before breaking */
+    max-width: 400px; /* Reduced max-width to pull text columns closer */
     display: flex;
     flex-direction: column;
-    gap: 30px; 
+    gap: 30px; /* Space between feature items within a column */
 }
 
 .image-column {
-    flex: 2; 
-    min-width: 300px; 
-    max-width: 400px; 
+    flex: 2; /* Image column can be slightly larger */
+    min-width: 300px; /* Minimum width for the image column */
+    max-width: 400px; /* Max width for the image */
 }
 
 .image-column img {
-    border-radius: 50%; 
+    border-radius: 50%; /* Makes the image circular like the example */
+}
 
 .feature-item {
     display: flex;
-    align-items: flex-start; 
-    text-align: left; 
-    gap: 15px; 
+    align-items: flex-start; /* Align icon and text to the top */
+    text-align: left; /* Align text to the left */
+    gap: 15px; /* Space between icon and text */
 }
 
 .icon-wrapper {
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%; 
+    width: 60px; /* Fixed width for icon background */
+    height: 60px; /* Fixed height for icon background */
+    border-radius: 50%; /* Circular background */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0; 
+    flex-shrink: 0; /* Prevent icon wrapper from shrinking */
 }
 
 .icon-wrapper img {
-    width: 35px; 
+    width: 35px; /* Size of the actual icon image */
     height: 35px;
 }
 
@@ -103,7 +105,7 @@ p {
 .feature-item h3 {
     font-size: 1.25em;
     margin-bottom: 5px;
-    color: #161723; 
+    color: #161723; /* Corrected color value */
 }
 
 .feature-item p {
@@ -114,28 +116,29 @@ p {
 /* Call to Action Button (MAIN BUTTON STYLE) */
 .call-to-action {
     display: inline-block;
-    background-color: #f7705e; 
+    background-color: #f7705e; /* Orange-red color from the image */
     color: #fff;
-    padding: 12px 90px; 
+    padding: 12px 90px; /* Larger padding for the main button */
     border: none;
-    border-radius: 8px; 
+    border-radius: 8px; /* Slightly rounded corners */
     text-decoration: none;
-    font-size: 1.05em; 
+    font-size: 1.05em; /* Larger font size for the main button */
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 0px; 
+    margin-bottom: 0px; /* Space below the main button */
+}
 
 .call-to-action:hover {
-    background-color: #e06050; 
+    background-color: #e06050; /* Darker orange-red on hover */
 }
 
 /* Specific style for the SMALLER button (in nutrition section) */
 .call-to-action.small-btn {
-    font-size: 0.9em; 
-    padding: 10px 65px; 
-    margin-top: 10px; 
-    margin-bottom: 0; 
+    font-size: 0.9em; /* Smaller font size for this specific button */
+    padding: 10px 65px; /* Smaller padding for this specific button */
+    margin-top: 10px; /* Adjust top margin if needed to separate from content above it */
+    margin-bottom: 0; /* Ensure no extra space below it if not needed */
     border-radius: 5px;
    
 }
@@ -146,8 +149,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
-    gap: 30px; 
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 30px; /* Space between guarantee and payments */
     margin-top: 20px;
 }
 
@@ -160,79 +163,79 @@ p {
 }
 
 .guarantee img {
-    width: 20px; 
+    width: 20px; /* Size of the heart icon */
     height: 20px;
-    display: inline-block; 
+    display: inline-block; /* Keep it inline with text */
 }
 
 .payment-methods {
     display: flex;
-    gap: 15px; 
-    flex-wrap: wrap; 
+    gap: 15px; /* Space between payment icons */
+    flex-wrap: wrap; /* Allow payment icons to wrap */
     justify-content: center;
 }
 
 .payment-methods img {
-    height: 22px; 
+    height: 22px; /* Height of payment icons */
     width: auto;
 }
 
 
 /* Main Content Sections */
 section {
-    max-width: 1100px; 
-    margin: 0 auto 60px auto; 
+    max-width: 1100px; /* Max width for content */
+    margin: 0 auto 60px auto; /* Centering sections with bottom margin */
     padding: 20px;
     display: flex;
-    align-items: center; 
-    gap: 30px; 
+    align-items: center; /* Vertically align items in the middle */
+    gap: 30px; /* Space between text and image - adjusted from 50px */
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* Stronger shadow for main sections */
 }
 
-section:nth-child(odd) { 
+section:nth-child(odd) { /* Alternate background color for readability, like the image */
     background-color: #fdfdfd;
 }
 
 /* Specific Section Layouts */
 .nutrition-section {
-    flex-direction: row; 
-    text-align: left; 
+    flex-direction: row; /* Text on left, image on right */
+    text-align: left; /* Changed from justified to left for general content */
 }
 
 .gastro-section {
-    flex-direction: row; 
-    text-align: left; 
+    flex-direction: row; /* Changed from row-reverse to row for image right, text left */
+    text-align: left; /* Changed from justified to left for general content */
 }
 
 .prebiotic-section {
-    flex-direction: row; 
-    text-align: left; 
+    flex-direction: row; /* Text on left, image on right */
+    text-align: left; /* Changed from justified to left for general content */
 }
 
 .nutrition-content,
 .gastro-content,
 .prebiotic-content {
-    flex: 1; 
+    flex: 1; /* Allows content to take available space, equal to image container */
     padding: 20px;
-    align-self: flex-start; 
+    align-self: flex-start; /* Aligns content to the top of the section */
 }
 
 .nutrition-content p,
 .gastro-content p,
 .prebiotic-content p {
-    font-size: 1.1em; 
-    line-height: 1.5; 
-    letter-spacing: 0.02em; 
-    color: #555; 
-    margin-bottom: 30px; 
-    text-align: left; 
+    font-size: 1.1em; /* Slightly larger font size for the paragraph */
+    line-height: 1.5; /* Good line height for readability */
+    letter-spacing: 0.02em; /* Subtle character spacing */
+    color: #555; /* Adjust color if needed, keep it dark gray */
+    margin-bottom: 30px; /* Space between paragraph and Key Points heading */
+    text-align: left; /* Ensure it's left-aligned */
 }
 
 .nutrition-content p {
     font-size: 1.1em;
-    line-height: 1.3; 
+    line-height: 1.3; /* <--- CHANGE THIS VALUE (reduce from 1.5) */
     letter-spacing: 0.02em;
     color: #555;
     margin-bottom: 30px;
@@ -243,8 +246,8 @@ section:nth-child(odd) {
 .nutrition-image,
 .gastro-image,
 .prebiotic-image {
-    flex: 1; 
-    width: 100%; 
+    flex: 1; /* Set flex to 1 for these containers too, to make them match the content width */
+    width: 100%; /* Keep this for responsiveness on smaller screens */
     height: auto;
     border-radius: 10px;
     text-align: center;
@@ -254,77 +257,77 @@ section:nth-child(odd) {
 .nutrition-image img,
 .gastro-image img,
 .prebiotic-image img {
-    width: 550px;  
-    height: 420px; 
-    object-fit: cover; 
-    border-radius: 10px; 
+    width: 550px;  /* Increased width for slightly larger image */
+    height: 420px; /* Increased height, adjust proportionately */
+    object-fit: cover; /* Ensures the image covers the set dimensions without distortion. */
+    border-radius: 10px; /* Apply rounded corners to the image itself if not already on the container */
 }
 
 .nutrition-image img {
-    width: 600px;  
-    height: 600px; 
+    width: 600px;  /* Significantly increase width for nutrition image */
+    height: 600px; /* Increase height proportionally */
 
 }
 
 .nutrition-section h2,
 .gastro-section h2,
 .prebiotic-section h2 {
-    font-family: 'Inter', sans-serif; 
-    line-height: 1.1; 
+    font-family: 'Inter', sans-serif; /* Applied Inter font */
+    line-height: 1.1; /* Increased line spacing for headings */
     font-weight: 600;
     font-size: 2.3em;
     margin-bottom: 25px;
     color: #161723;
-    text-align: left; 
+    text-align: left; /* Align headings to the left */
 }
 
 /* Key Points List */
-.nutrition-content h3 { 
+.nutrition-content h3 { /* Specific margin for the "Key Points" heading */
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: left;
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Inter', sans-serif; /* Applied Inter font */
 }
 
 .nutrition-content ul {
     list-style: none;
     padding: 0;
     margin-bottom: 30px;
-    border-top: 1px solid #eee; 
-    padding-top: 20px; 
+    border-top: 1px solid #eee; /* Light gray line above the list */
+    padding-top: 20px; /* Space between the line and the first list item */
 }
 
 /* Modify the .nutrition-content ul li rule for alignment and spacing */
 .nutrition-content ul li {
-    margin-bottom: 15px; 
+    margin-bottom: 15px; /* Space between list items */
     font-size: 0.9em;
     color: #555;
-    display: flex; 
-    align-items: flex-start; 
-    gap: 20px; 
-    padding-bottom: 15px; 
-    border-bottom: 1px solid #eee; 
+    display: flex; /* Make each list item a flex container */
+    align-items: flex-start; /* Align percentage and text to the top */
+    gap: 20px; /* Space between the percentage and the text */
+    padding-bottom: 15px; /* Add padding below each item */
+    border-bottom: 1px solid #eee; /* Add a line below each item */
 }
 
 .nutrition-content ul li:last-child {
-    border-bottom: none; 
+    border-bottom: none; /* Remove border from the last list item */
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .nutrition-content ul li .percentage {
     font-weight: bold;
-    color: #ff6f61; 
-    font-size: 2.2em; 
-    flex-shrink: 0; 
-    width: 80px; 
-    text-align: right; 
-    line-height: 1.2; 
+    color: #ff6f61; /* The orange-red color */
+    font-size: 2.2em; /* Make the percentage number larger */
+    flex-shrink: 0; /* Prevent the percentage from shrinking */
+    width: 80px; /* Give the percentage a fixed width to align text */
+    text-align: right; /* Align the number to the right within its width */
+    line-height: 1.2; /* Ensure the number itself has good line spacing */
 }
 
-.nutrition-content ul li span:not(.percentage) { 
-    flex-grow: 1; 
-    text-align: left; 
+.nutrition-content ul li span:not(.percentage) { /* Rule for the text description next to percentage */
+    flex-grow: 1; /* Allow text to take up remaining space */
+    text-align: left; /* Ensure text is left-aligned */
     font-size: 1em;
     line-height: 1.5;
 }
