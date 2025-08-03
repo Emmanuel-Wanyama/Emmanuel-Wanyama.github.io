@@ -1,0 +1,52 @@
+/* General styling for the whole page */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Dark gray background */
+    color: #d1d5db; /* Light gray text */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Custom styles for the gradient background in the hero section */
+#hero {
+    position: relative;
+    background-image: linear-gradient(135deg, #16a34a, #111827, #4f46e5);
+    background-size: 200% 200%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Sticky navigation header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+/* Fade-in animation for hero text */
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.animate-fade-in-up.delay-200 { animation-delay: 0.2s; }
+.animate-fade-in-up.delay-400 { animation-delay: 0.4s; }
+.animate-fade-in-up.delay-500 { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
